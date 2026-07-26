@@ -12,26 +12,6 @@
 
 <body>
 
-    <div id="loader">
-        <div class="loader-curtain">
-            <div class="loader-curtain-left"></div>
-            <div class="loader-curtain-right"></div>
-        </div>
-        <div class="loader-lines">
-            <div class="loader-line"></div>
-            <div class="loader-line"></div>
-            <div class="loader-line"></div>
-            <div class="loader-line"></div>
-            <div class="loader-line"></div>
-        </div>
-        <div class="loader-center">
-            <div class="loader-ring">
-                <div class="loader-ring-inner"></div>
-                <div class="loader-dot"></div>
-            </div>
-        </div>
-    </div>
-
     <header>
         <div class="logo">Javoh<span class="one">1</span>r</div>
         <nav id="mainNav">
@@ -129,33 +109,39 @@
         <div class="skills-wrap reveal">
             <div class="skills-bars">
                 <div class="skill-bar">
-                    <div class="skill-bar-top"><span>HTML5</span><em>97%</em></div>
+                    <div class="skill-bar-top"><span>HTML</span><em>97%</em></div>
                     <div class="bar-track">
                         <div class="bar-fill" data-w="97"></div>
                     </div>
                 </div>
                 <div class="skill-bar">
-                    <div class="skill-bar-top"><span>CSS3</span><em>87%</em></div>
+                    <div class="skill-bar-top"><span>CSS</span><em>93%</em></div>
                     <div class="bar-track">
-                        <div class="bar-fill" data-w="87"></div>
+                        <div class="bar-fill" data-w="93"></div>
                     </div>
                 </div>
                 <div class="skill-bar">
-                    <div class="skill-bar-top"><span>JavaScript</span><em>30%</em></div>
+                    <div class="skill-bar-top"><span>JavaScript</span><em>92%</em></div>
                     <div class="bar-track">
-                        <div class="bar-fill" data-w="30"></div>
+                        <div class="bar-fill" data-w="92"></div>
                     </div>
                 </div>
                 <div class="skill-bar">
-                    <div class="skill-bar-top"><span>Python</span><em>17%</em></div>
+                    <div class="skill-bar-top"><span>Python</span><em>95%</em></div>
                     <div class="bar-track">
-                        <div class="bar-fill" data-w="17"></div>
+                        <div class="bar-fill" data-w="95"></div>
                     </div>
                 </div>
                 <div class="skill-bar">
-                    <div class="skill-bar-top"><span>UI/UX Design</span><em>50%</em></div>
+                    <div class="skill-bar-top"><span>Git</span><em>98%</em></div>
                     <div class="bar-track">
-                        <div class="bar-fill" data-w="50"></div>
+                        <div class="bar-fill" data-w="98"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-bar-top"><span>UI/UX Design</span><em>91%</em></div>
+                    <div class="bar-track">
+                        <div class="bar-fill" data-w="91"></div>
                     </div>
                 </div>
             </div>
@@ -253,7 +239,7 @@
                 </div>
                 <div class="contact-item">
                     <div class="c-icon"><i class="fa fa-location-dot"></i></div>
-                    <span>O'zbekiston,Xorazm,Xonqa</span>
+                    <span>O'zbekiston, Xorazm, Xonqa</span>
                 </div>
             </div>
 
@@ -324,12 +310,6 @@
     <button id="btt" aria-label="Tepaga qaytish"><i class="fa fa-arrow-up"></i></button>
 
     <script>
-        const loader = document.getElementById('loader');
-
-        window.addEventListener('load', () => {
-            setTimeout(() => loader.classList.add('hidden'), 2000);
-        });
-
         const themeBtn = document.getElementById('themeBtn');
         const html = document.documentElement;
         const saved = localStorage.getItem('theme') || 'light';
@@ -384,7 +364,7 @@
             }
             setTimeout(type, del ? 55 : 90);
         }
-        setTimeout(type, 2300);
+        setTimeout(type, 400);
 
         const reveals = document.querySelectorAll('.reveal');
         const revObs = new IntersectionObserver((entries) => {
